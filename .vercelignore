@@ -3,6 +3,7 @@
 .next
 next.config.mjs
 .env*.local
+./components
 
 
 # Ignorar archivos de desarrollo
