@@ -1,9 +1,6 @@
 # Ignorar configuraciones automáticas de Vercel
 .vercel
-.next
-next.config.mjs
 .env*.local
-./components
 
 
 # Ignorar archivos de desarrollo
