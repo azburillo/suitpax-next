@@ -47,4 +47,3 @@
     "prettier/prettier": "error" // Marca errores de Prettier como errores de ESLint
   }
 }
-

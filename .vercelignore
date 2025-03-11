@@ -3,7 +3,7 @@
 .next
 next.config.mjs
 .env*.local
-package.json
+
 
 # Ignorar archivos de desarrollo
 node_modules
