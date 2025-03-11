@@ -1,0 +1,50 @@
+{
+  // Extiende configuraciones predefinidas
+  "extends": [
+    "next/core-web-vitals", // Reglas básicas de Next.js
+    "airbnb", // Guía de estilo de Airbnb
+    "airbnb-typescript", // Configuración de Airbnb para TypeScript
+    "plugin:@typescript-eslint/recommended", // Reglas recomendadas para TypeScript
+    "plugin:react/recommended", // Reglas recomendadas para React
+    "plugin:react-hooks/recommended", // Reglas para los hooks de React
+    "plugin:jsx-a11y/recommended", // Reglas de accesibilidad para JSX
+    "plugin:import/errors", // Reglas para importaciones (errores)
+    "plugin:import/warnings", // Reglas para importaciones (advertencias)
+    "plugin:import/typescript", // Reglas para importaciones en TypeScript
+    "prettier" // Deshabilita reglas que entran en conflicto con Prettier
+  ],
+  "parser": "@typescript-eslint/parser", // Parser para analizar TypeScript
+  "parserOptions": {
+    "project": "./tsconfig.json" // Ruta al archivo de configuración de TypeScript
+  },
+  // Plugins que se utilizarán
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "jsx-a11y", "import", "prettier"],
+  "root": true, // Indica que este es el archivo de configuración raíz
+  "env": {
+    "browser": true, // Habilita variables globales del navegador
+    "es2021": true, // Habilita características de ES2021
+    "node": true // Habilita variables globales de Node.js
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Detecta automáticamente la versión de React
+    },
+    "import/resolver": {
+      "typescript": {} // Usa TypeScript para resolver importaciones
+    }
+  },
+  // Reglas personalizadas
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Desactiva la necesidad de importar React en cada archivo JSX
+    "react/prop-types": "off", // Desactiva la validación de prop-types (útil con TypeScript)
+    "@typescript-eslint/explicit-module-boundary-types": "off", // Permite omitir tipos de retorno explícitos
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }], // Advierte sobre variables no utilizadas, ignora las que empiezan con _
+    "no-console": ["warn", { "allow": ["warn", "error"] }], // Advierte sobre console.log, permite console.warn y console.error
+    "react/jsx-props-no-spreading": "off", // Permite el uso de spread operator en props
+    "import/prefer-default-export": "off", // Permite exportaciones nombradas únicas
+    "react/require-default-props": "off", // No requiere props por defecto
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // Permite JSX en archivos .tsx
+    "prettier/prettier": "error" // Marca errores de Prettier como errores de ESLint
+  }
+}
+

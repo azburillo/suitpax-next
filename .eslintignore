@@ -1,0 +1,12 @@
+# Ignore build output
+build
+
+# Ignore dependencies
+node_modules
+
+# Ignore test coverage reports
+coverage
+
+# Ignore configuration files
+*.config.js
+

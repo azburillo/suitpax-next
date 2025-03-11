@@ -1,0 +1,36 @@
+# Ignorar configuraciones automáticas de Vercel
+.vercel
+.next
+next.config.mjs
+.env*.local
+package.json
+
+# Ignorar archivos de desarrollo
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos de sistema
+.DS_Store
+*.pem
+
+# Ignorar archivos de testing
+coverage
+*.test.*
+
+# Ignorar archivos de IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Ignorar archivos de build alternativos
+out/
+build/
+dist/
+
+# Ignorar package-lock alternativos
+yarn.lock
+pnpm-lock.yaml
+

@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Theme Colors */
+    --gradient: #093028;
+    --background: 220 14% 96%; /* Changed to gray-100 */
+    --foreground: 220 14% 4%; /* Adjusted for better contrast with gray-100 */
+
+    --muted: 220 14% 91%;
+    --muted-foreground: 220 9% 46%;
+
+    --popover: 220 14% 96%;
+    --popover-foreground: 220 14% 4%;
+
+    --card: 220 14% 96%;
+    --card-foreground: 220 14% 4%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+
+    --primary: 178 68% 11%;
+    --primary-foreground: 178 1.36% 91.1%;
+
+    --secondary: 220 14% 91%;
+    --secondary-foreground: 220 9% 46%;
+
+    --accent: 220 14% 91%;
+    --accent-foreground: 220 9% 46%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 178 68% 11%;
+
+    --radius: 0.5rem;
+
+    /* Font */
+    --font-inter: "Inter", sans-serif;
+  }
+
+  .dark {
+    --background: 220 14% 4%;
+    --foreground: 220 14% 96%;
+    --card: 220 14% 4%;
+    --card-foreground: 220 14% 96%;
+    --popover: 220 14% 4%;
+    --popover-foreground: 220 14% 96%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  @keyframes move-infinite {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-move-infinite {
+    animation: move-infinite 10s linear infinite;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300/50 rounded-full;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .bg-grid-gray-100 {
+    background-image: linear-gradient(to right, #f1f5f9 1px, transparent 1px),
+      linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .bg-grid-white\/10 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+}
+

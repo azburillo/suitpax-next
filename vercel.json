@@ -1,0 +1,57 @@
+{
+"git": {
+    "deploymentEnabled": {
+      "main": true,
+      "develop": true
+    }
+  },
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "framework": "nextjs",
+
+  "rewrites": [
+    { "source": "/platform", "destination": "/sections/platform" },
+    { "source": "/platform/travel-software", "destination": "/sections/platform/travel-software" },
+    { "source": "/platform/flight-booking", "destination": "/sections/platform/flight-booking" },
+    { "source": "/platform/expense-management", "destination": "/sections/platform/expense-management" },
+    { "source": "/platform/airport-vip-lounge", "destination": "/sections/platform/airport-vip-lounge" },
+    { "source": "/platform/corporate-software", "destination": "/sections/platform/corporate-software" },
+    { "source": "/services", "destination": "/sections/services" },
+    { "source": "/services/business-travel", "destination": "/sections/services/business-travel" },
+    { "source": "/services/fintech", "destination": "/sections/services/fintech" },
+    { "source": "/services/insurance", "destination": "/sections/services/insurance" },
+    { "source": "/services/ai-travel-booking", "destination": "/sections/services/ai-travel-booking" },
+    { "source": "/services/car-rental", "destination": "/sections/services/car-rental" },
+    { "source": "/solutions", "destination": "/sections/solutions" },
+    { "source": "/solutions/for-travelers", "destination": "/sections/solutions/for-travelers" },
+    { "source": "/solutions/for-financial-teams", "destination": "/sections/solutions/for-financial-teams" },
+    { "source": "/solutions/for-startups", "destination": "/sections/solutions/for-startups" },
+    { "source": "/solutions/for-airlines-teams", "destination": "/sections/solutions/for-airlines-teams" },
+    { "source": "/resources", "destination": "/sections/resources" },
+    { "source": "/resources/academy", "destination": "/sections/resources/academy" },
+    { "source": "/resources/trip-planning", "destination": "/sections/resources/trip-planning" },
+    { "source": "/resources/help-center", "destination": "/sections/resources/help-center" },
+    { "source": "/resources/research", "destination": "/sections/resources/research" },
+    { "source": "/company", "destination": "/sections/company" },
+    { "source": "/about", "destination": "/sections/company/about" },
+    { "source": "/press", "destination": "/sections/company/press" },
+    { "source": "/customers", "destination": "/sections/company/customers" },
+    { "source": "/changelog", "destination": "/sections/company/changelog" },
+    { "source": "/community", "destination": "/sections/company/community" },
+    { "source": "/company/subprocessors", "destination": "/sections/company/subprocessors" },
+    { "source": "/integrations", "destination": "/sections/integrations" },
+    { "source": "/manifesto", "destination": "/sections/manifesto" },
+    { "source": "/terms", "destination": "/legal/terms" },
+    { "source": "/privacy", "destination": "/legal/privacy" },
+    { "source": "/cookies", "destination": "/legal/cookies" },
+    { "source": "/compliance", "destination": "/legal/compliance" },
+    { "source": "/modern-slavery-statement", "destination": "/legal/modern-slavery-statement" },
+    { "source": "/docs", "destination": "/sections/resources/docs" },
+    { "source": "/api", "destination": "/sections/resources/api" },
+    { "source": "/contact", "destination": "/sections/contact" },
+    { "source": "/partners", "destination": "/sections/company/partners" },
+    { "source": "/membership", "destination": "/sections/services/membership" },
+    { "source": "/developer-hub", "destination": "/sections/resources/developer-hub" }
+  ]
+}
+

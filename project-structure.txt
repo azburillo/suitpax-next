@@ -1,0 +1,54 @@
+app/
+└── sections/
+    ├── platform/
+    │   ├── travel-software/
+    │   │   └── page.tsx
+    │   ├── flight-booking/
+    │   │   └── page.tsx
+    │   ├── expense-management/
+    │   │   └── page.tsx
+    │   ├── airport-vip-lounge/
+    │   │   └── page.tsx
+    │   └── corporate-software/
+    │       └── page.tsx
+    ├── services/
+    │   ├── business-travel/
+    │   │   └── page.tsx
+    │   ├── fintech/
+    │   │   └── page.tsx
+    │   ├── insurance/
+    │   │   └── page.tsx
+    │   └── ai-travel-booking/
+    │       └── page.tsx
+    ├── solutions/
+    │   ├── for-travelers/
+    │   │   └── page.tsx
+    │   ├── for-financial-teams/
+    │   │   └── page.tsx
+    │   ├── for-startups/
+    │   │   └── page.tsx
+    │   └── for-airlines-teams/
+    │       └── page.tsx
+    ├── resources/
+    │   ├── academy/
+    │   │   └── page.tsx
+    │   ├── trip-planning/
+    │   │   └── page.tsx
+    │   ├── help-center/
+    │   │   └── page.tsx
+    │   └── research/
+    │       └── page.tsx
+    ├── company/
+    │   ├── about/
+    │   │   └── page.tsx
+    │   ├── press/
+    │   │   └── page.tsx
+    │   ├── changelog/
+    │   │   └── page.tsx
+    │   └── community/
+    │       └── page.tsx
+    ├── partners/
+    │   └── page.tsx
+    └── manifesto/
+        └── page.tsx
+

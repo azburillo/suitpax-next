@@ -1,0 +1,14 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Allow: /sign-in
+Allow: /sign-up
+Allow: /accounts/*
+
+# Sitemap location
+Sitemap: https://suitpax.com/sitemap.xml
+
+# Allow access to authentication subdomain
+Host: https://suitpax.com
+Host: https://accounts.suitpax.com
+
