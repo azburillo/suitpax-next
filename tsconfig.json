@@ -36,7 +36,8 @@
     "hooks/**/*.ts",
     "types/**/*.ts",
     "next.config.js",
-    "tailwind.config.ts"
+    "tailwind.config.ts",
+    "next.config.mjs"
   ],
   "exclude": ["node_modules"]
 }
