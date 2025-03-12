@@ -5,8 +5,8 @@
       "develop": true
     }
   },
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
   "framework": "nextjs",
 
   "rewrites": [
