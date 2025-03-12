@@ -1,11 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { teamMembers } from "./app/data/team-members"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { teamMembers } from "@/app/data/team-members"
+import { Button } from "@/app/components/ui/button"
+import { Badge } from "@/app/components/ui/badge"
 import { ArrowRight } from "lucide-react"
-import { InteractiveGlobe } from "@/components/ui/interactive-globe"
+import { InteractiveGlobe } from "@/app/components/ui/interactive-globe"
 
 export default function AIAgentsPage() {
   return (
