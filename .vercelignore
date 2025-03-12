@@ -1,7 +1,7 @@
 # Ignorar configuraciones automáticas de Vercel
 .vercel
 .env*.local
-/components
+
 
 # Ignorar archivos de desarrollo
 node_modules
